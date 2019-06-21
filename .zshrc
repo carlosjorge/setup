@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/carlos/.oh-my-zsh"
+export ZSH="/home/carlos/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -68,8 +68,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rvm ruby history zsh-autosuggestions) 
-#  zsh-syntax-highlighting)
+plugins=(git rvm ruby  history zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,6 +98,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-#REMOVE USERNAME 
+#REMOVE USERNAME
 DEFAULT_USER=`whoami`
-#source /home/carlos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# prompt_rvm() {
+#   if [ -e ~/.rvm/bin/rvm-prompt ] && [[ -a ./Gemfile ]]; then
+#     prompt_segment red black "$(rvm-prompt s i v g)%f"
+#   fi
+# }
+# Adicionar versão do ruby no tema
+
